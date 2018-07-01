@@ -32,35 +32,449 @@
 
 			<section>
 				<h2>Introduction to Python</h2>
+				<h4>By Sandra Nissim</h4>
+			</section>
+
+			<!-- CLASS #1 -->
+			<section>
+				<h2>Class #1</h2>
 			</section>
 
 			<section>
-				<h2>My examples</h2>
+				<h2>What is Python?</h2>
 				<ul>
-					<li class="fragment">Example 1</li>
-					<li class="fragment">Example 2</li>
+					<li class="fragment"> High-level computer language </li>
+					<li class="fragment"> Compiler: a program which takes in a different high-level computer program as input and outputs the same program but written in machine language</li>
+					<li class="fragment"> Interpreter: a program which imitates a computer that understands a high-level language</li>
+					<li class="fragment"> Python uses byte code hybrid</li>
 				</ul>
 			</section>
 
 			<section>
-				<p>Code Example</p>
-<pre><code>
-$ open -a TextEdit myfile.txt
-</code></pre>
-					
-<pre><code>
-$ open -t myfile.txt	
-</code></pre>
-			</section>
-
-
-			<section>
+				<h2>Python in Industry</h2>
 				<ul>
-					<li class="fragment">Example 1</li>
-					<li class="fragment">Example 2</li>
+				<li class="fragment">Used for: 
+				<ul>
+					<li>System administration</li>
+					<li>3D animation and image editing</li>
+					<li>Scientific computing and data analysis</li>
+					<li>Web development</li>
+					<li>Game development</li>
+				</ul>
+				</li>
+				<li class="fragment">Used by: 
+				<ul>
+					<li>Disney</li>
+					<li>Dropbox</li>
+					<li>Canonical and Redhat</li>
+					<li>Google</li>
+					<li>NASA</li>
+				</ul>
+				</li>
 				</ul>
 			</section>
 
+			<section>
+				<h2>Text Editors</h2>
+				<ul>
+					<li class="fragment">Where source code is written and programs made</li>
+					<li class="fragment">Like a word processor (Google Docs, Microsoft Word, etc.) but for code </li>
+					<li class="fragment">Integrated Devlopment Environment (IDE) --> color coordinated, debugging help, etc </li>
+					<li class="fragment">Examples of text editors:
+					<ul>
+						<li>Sublime</li>
+						<li>TextWrangler</li>
+						<li>PyCharm</li>
+					</ul>
+					</li>
+					<li class="fragment">Remember to save your files with the proper extension (.py for Python)</li>
+				</ul>
+			</section>
+
+			<section>
+			<h2>Terminal</h2>
+			<ul>
+			<li class="fragment">An interface which executes text based commands entered</li>
+			<li class="fragment">Communications with the program will be sent through this interactive environment</li>
+			<li class="fragment">Use it to run programs:
+			<ul>
+				<li class="fragment">Call the directory in which the desired module lives (i.e. Desktop, Documents) by using the cd command --> cd documents</li>
+				<li class="fragment">Type the language + version being used followed by the name of the file to run --> python3 helloworld.py</li>
+			</ul>
+			</li>
+			</ul>
+			</section>
+
+			<section>
+				<h2>Terms</h2>
+				<ul>
+					<li class="fragment">Syntax: Precise form of language</li>
+					<li class="fragment">Semantics: Precise meaning of language</li>
+				</ul>
+			</section>
+
+			<section>
+				<h1>Download Python!</h1>
+				<p>Go to python.org to download the most recent version.</p>
+			</section>
+
+			<section>
+				<h2>Elementary Data Types: Strings</h2>
+				<ul>
+					<li class="fragment">A list of characters</li>
+					<li class="fragment">Denoted by single or double quotation enclosure</li>
+					<li class="fragment">Examples: 
+					<ul>
+						<li>"hello world!"</li>
+						<li>'I am 20 years old.'</li>
+					</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Elementary Data Types: Integers</h2>
+				<ul>
+					<li class="fragment">A whole number (i.e. no decimal)</li>
+					<li class="fragment">Examples: 
+					<ul>
+						<li>-14</li>
+						<li>0</li>
+						<li>9</li>
+					</ul>
+					</li>
+					<li class="fragment">Note: there is no such thing as infinity in Python</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Elementary Data Types: Floats</h2>
+				<ul>
+					<li class="fragment">Floating point real values</li>
+					<li class="fragment">Decimal numbers</li>
+					<li class="fragment">Examples: 
+					<ul>
+						<li>4.5</li>
+						<li>-8.0</li>
+						<li>0.0</li>
+					</ul>
+					</li>
+					<li class="fragment">Note: In JavaScript there is only one number data type. In Python there are TWO!</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Elementary Data Types: Booleans</h2>
+				<ul>
+					<li class="fragment">True or False</li>
+					<li class="fragment">Must be capitalized</li>
+					<li class="fragment">NOT enclosed in quotes --> different from strings!</li>
+					<li class="fragment">Examples: 
+					<ul>
+						<li>True</li>
+						<li>False</li>
+					</ul>
+					</li>
+					</ul>
+					<p class="fragment">Tip: To check the type of any given piece of data use the type() functioin --> type(4) returns int, type("h") returns str, etc.</p>
+				
+			</section>
+
+			<section>
+				<h2>Elementary Operators: +</h2>
+				<ul>
+					<li class="fragment">Addition</li>
+					<li class="fragment">Applicable to strings, ints, floats</li>
+					<li class="fragment">String addition --> concatenation</li>
+					<li class="fragment">Examples: 
+					<ul>
+						<li>“hello” + “world” --> “helloworld”</li>
+						<li>1 + 2 --> 3</li>
+						<li>8.0 + 2.0 --> 10.0</li>
+					</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Elementary Operators: -</h2>
+				<ul>
+					<li class="fragment">Subtraction</li>
+					<li class="fragment">Applicable to ints, floats</li>
+					<li class="fragment">Examples: 
+					<ul>
+						<li>4 - 3 --> 1</li>
+						<li>5.25 - 4 --> 1.25</li>
+					</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Elementary Operators: *</h2>
+				<ul>
+					<li class="fragment">Multiplication</li>
+					<li class="fragment">Applicable to strings, ints, floats</li>
+					<li class="fragment">String multiplication is called repeated concatenation</li>
+					<li class="fragment">Examples: 
+					<ul>
+						<li>“hello” * 3 --> “hellohellohello”</li>
+						<li>3 * 1.5 --> 4.5</li>
+					</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Elementary Operators: /</h2>
+				<ul>
+					<li class="fragment">Division</li>
+					<li class="fragment">Applicable to ints, floats</li>
+					<li class="fragment">Examples: 
+					<ul>
+						<li>4 / 2 --> 2</li>
+						<li>8 / 3 --> 2.666</li>
+					</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Elementary Operators: //</h2>
+				<ul>
+					<li class="fragment">Floor division</li>
+					<li class="fragment">Returns the rounded down result when two numbers are divided</li>
+					<li class="fragment">Applicable to ints, floats</li>
+					<li class="fragment">Examples: 
+					<ul>
+						<li>3 // 2 --> 1</li>
+						<li>10 // 6 --> 1</li>
+					</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Elementary Operators: %</h2>
+				<ul>
+					<li class="fragment">Modulo</li>
+					<li class="fragment">Returns the remainder when two numbers are divided</li>
+					<li class="fragment">Applicable to ints, floats</li>
+					<li class="fragment">Examples: 
+					<ul>
+						<li>3 % 2 --> 1</li>
+						<li>10 % 6 --> 4</li>
+					</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Elementary Operators: **</h2>
+				<ul>
+					<li class="fragment">Exponent</li>
+					<li class="fragment">Applicable to ints, floats</li>
+					<li class="fragment">Examples: 
+					<ul>
+						<li> 2 ** 3 --> 8</li>
+						<li>5 ** 0 --> 1</li>
+					</ul>
+					</li>
+				</ul>
+				<p class="fragment">Note: PEMDAS still applies to all expressions.</p>
+			</section>
+
+			<section>
+				<h2>Variables</h2>
+				<ul>
+					<li class="fragment">An identifier that stores a value</li>
+					<li class="fragment">Can represent any data type</li>
+					<li class="fragment">Assign variable names to values by using =
+					<ul>
+						<li class="fragment"> = does not mean "equal" --> means "set to"</li>
+					</ul>
+					</li>
+					<li class="fragment">Note: all variables must be assigned values when they are declared</li>
+					<pre class="fragment">
+					<code class="py">
+					myNum = 10
+					myDog = "Coach"
+					myBool = True
+					</code>
+					</pre>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Variables: Naming Rules</h2>
+				<ul>
+					<li class="fragment">Must start with a  letter or underscore</li>
+					<li class="fragment">Can include numbers, letters, underscores</li>
+					<li class="fragment">Case sensitive (i.e. myNum does not equal mynum</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Variables: General Rules</h2>
+				<ul>
+					<li class="fragment">Variables only remember the most recent value assignment </li>
+					<pre class="fragment">
+						<code class="py">
+						myName = "Annie"
+						myName = "Cannons"
+						</code>
+					</pre>
+					<li class="fragment">myName now holds the value "Cannons"</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Variables: General Rules</h2>
+				<ul>
+					<li class="fragment">Variables can be set to themselves</li>
+					<pre class="fragment">
+						<code class="py">
+						totalAmount = 30.25
+						totalAmount = totalAmount + 2
+						</code>
+					</pre>
+					<li class="fragment">totalAmount now holds the value 32.25</li>
+					<li class="fragment">Works because the computer first processes the right hand side of the equal sign and then the left</li>
+					<li class="fragment">The following two lines have the exact same meaning:</li>
+					<pre class="fragment">
+						<code class="py">
+						totalAmount = totalAmount + 2
+						totalAmount += 2
+						</code>
+					</pre>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Variables: General Rules</h2>
+				<ul>
+					<li class="fragment">Simultaneous assignment --> assign multiple variables at once</li>
+					<pre class="fragment">
+						<code class="py">
+						x, y = 30, 20
+						</code>
+					</pre>
+					<li class="fragment">x holds the value 30</li>
+					<li class="fragment">y holds the value 20</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Converting Data Types</h2>
+				<ul>
+					<li class="fragment">Let myAge = "46"</li>
+					<li class="fragment">myAge is a string</li>
+					<li class="fragment">What if you want it to be an integer? A float?</li>
+					<li class="fragment">Use built-in functions to change the type of a variable!</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Converting Data Types</h2>
+				<ul>
+					<pre class="fragment">
+						<code class="py">
+						myAge = "46"
+						myAge = int(myAge)
+						myAge = float(myAge)
+						myAge = str(myAge)
+						</code>
+					</pre>
+					<p class="fragment">In this example, the variable myAge starts off as a string, then is changed to an integer data type, then to a float data type, and finally back to a string data type.</p>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Converting Data Types: Rules</h2>
+				<ul>
+					<pre class="fragment">
+						<code class="py">
+						int("hello")
+						</code>
+					</pre>
+					<li class="fragment">This will result in an error because the characters are not numbers</li>
+					<li class="fragment">General rules for converting:
+					<ul>
+						<li class="fragment">An integer can always become a float or a string</li>
+						<li class="fragment">A float can always become an integer or a string</li>
+						<li class="fragment">A string can sometimes become an integer or a string depending on its value</li>
+					</ul></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Statements</h2>
+				<ul>
+					<li class="fragment">A complete command</li>
+					<li class="fragment">Does not return a value</li>
+					<li class="fragment">Print statement writes onto the shell</li>
+					<pre class="fragment">
+						<code class="py">
+						print(“helloworld”)
+						print(3 + 5 ** 2)
+						print(“4 + 1 = “, 4 + 1)
+						print(totalAmount)
+						</code>
+					</pre>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Errors</h2>
+				<ul>
+					<li class="fragment">If there is an error in a piece of code, the program will stop running or get stuck</li>
+					<li class="fragment">Can be as small as a typo or as big as a major flaw in logic</li>
+					<li class="fragment">Syntax errors result when the "rules of coding" are not followed</li>
+					<li class="fragment">Semantic errors result when the program does not follow the logic the programmer intended</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Documentation</h2>
+				<ul>
+					<li class="fragment">When in doubt about how to write a piece of code, consult the Python documentation</li>
+					<li class="fragment">Available online </li>
+					<li class="fragment">Equivalent to a user manual</li>
+					<li class="fragment">Guidelines on how to use keywords and for what they are used</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Comments</h2>
+				<ul>
+					<li class="fragment">Single line comments are written using a hashtag</li>
+					<li class="fragment">Multi-line comments (docstrings) are written using three quotations (single or double)</li>
+					<li class="fragment">It is good style to write commments explaining the purpose behind each block of code
+					<ul>
+						<li class="fragment">Easier to read</li>
+						<li class="fragment">Easier to adapt</li>
+						<li class="fragment">Easier to debug</li>
+					</ul>
+					</li>
+					<pre class="fragment">
+						<code class="py">
+							# This is a comment
+							'''This is a muli
+							line
+							docstring'''
+							"""
+							this is also
+							a
+							multiline
+							docstring
+							"""
+						</code>
+					</pre>
+				</ul>
+			</section>
+
+
+			
 			<!-- DO NOT EDIT BELOW HERE -->
 
 	</div>
